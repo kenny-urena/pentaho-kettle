@@ -8,6 +8,12 @@
   <artifactId>kettle-engine</artifactId>
   <version>9.5.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
+  <repositories>
+    <repository>
+      <id>jetbrains-utils</id>
+      <url>https://repository.jetbrains.com/utils/</url>
+    </repository>
+  </repositories>
 
   <name>PDI Engine</name>
 
@@ -563,9 +569,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.syslog4j</groupId>
+      <groupId>org.jetbrains</groupId>
       <artifactId>syslog4j</artifactId>
-      <version>${syslog4j.version}</version>
+      <version>0.9.46</version>
       <exclusions>
         <exclusion>
           <groupId>*</groupId>
@@ -967,6 +973,12 @@
       <artifactId>wiremock-jre8-standalone</artifactId>
       <version>${wiremock.version}</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains</groupId>
+      <artifactId>syslog4j</artifactId>
+      <version>0.9.46</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
 
